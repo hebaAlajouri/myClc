@@ -1,0 +1,1348 @@
+<html>
+    <head>
+        <title>My Calculator</title>
+        <style>
+            table,td,tr{
+                border:solid 1px;
+                border-color: #e6e6e6;
+                
+                text-align: center;
+                border-spacing: 10px;
+               }
+               .t{
+               
+                
+            }
+            .screen{
+                text-align: center;
+                padding-top: 30vh;
+                
+                
+            }
+            .main{
+                display: grid;
+            }
+            #c1{
+                background-color: #f2f2f2;
+               
+            }
+            #c2{
+                background-color: #f2f2f2;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+            }
+            #c3{
+                background-color:#f2f2f2;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+            }
+            #c4{
+                background-color: #f2f2f2;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+            }
+            #c5{
+                background-color: #f2f2f2;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+            }
+            #c6{
+                background-color: #f2f2f2;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+            }
+            #c7{
+                background-color: #f2f2f2;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+               
+            }
+            #c8{
+                background-color: #f2f2f2;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+            }
+            #c9{
+                background-color:#f2f2f2 ; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+            }
+            #c10{
+                background-color: #f2f2f2;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+            }
+            #c11{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+                background-color:#999999;
+            }
+            #c12{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+                background-color:#999999;
+            }
+            #c13{
+                background-color:#999999;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+            }
+          
+
+            #c14{
+                background-color: #f2f2f2;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+            }
+            #c15{
+                background-color: #f2f2f2;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+            }
+            #c16{
+                background-color: #f2f2f2;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+            }
+            #c17{
+                background-color: #f2f2f2;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+            }
+            #c18{
+                background-color:#999999;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+            }
+            #c19{
+                background-color:#999999;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+            }
+            #c20{
+                background-color:#999999;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+            }
+            #c21{
+                background-color: #f2f2f2;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+            }
+            #c22{
+                background-color: #f2f2f2;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+            }
+            #c23{
+                background-color: #f2f2f2;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+            }
+            #c24{
+                background-color: #f2f2f2;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+            }
+            #c25{
+                background-color:#999999;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+            }
+            #c26{
+                background-color:#999999;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+            }
+            #c27{
+                background-color:#999999;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+            }
+            #c28{
+                background-color: #f2f2f2;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+            }
+            #c29{
+                background-color: #f2f2f2;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+            }
+            #c30{
+                background-color: #f2f2f2;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+            }
+            #c31{
+                background-color: #f2f2f2;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+            }
+            #c32
+            {
+                background-color:#999999;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+            }
+            #c33
+            {
+                background-color:#999999;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+            }
+            #c34{
+                background-color:#0073e6;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+            }
+            #c35{
+                background-color: #f2f2f2;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+            }
+            .b1{
+                width: 90%;
+                height: 90%;
+                border: none;
+                background-color:#f2f2f2 ;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+               
+        
+            }
+            .b2{
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color:#f2f2f2 ;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+               
+        
+            }
+            .b3{
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color:#f2f2f2 ;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+               
+        
+            }
+            .b4{
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color:#f2f2f2 ;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+               
+        
+            }
+            .b5{
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color:#f2f2f2 ;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+               
+        
+            }
+            .b6{
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color:#f2f2f2 ;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+               
+        
+            }
+            .b7{
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color:#f2f2f2 ;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+               
+        
+            }
+            .b8{
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color:#f2f2f2 ;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+               
+        
+            }
+            .b9{
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color:#f2f2f2 ;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+               
+        
+            }
+            .b10{
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color:#f2f2f2 ;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+               
+        
+            }
+            .b11{
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color: #999999;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+               
+        
+            }
+            .b12{
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color: #999999;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+               
+        
+            }
+            .b13{
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color: #999999;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+               
+        
+            }
+            .b14{
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color:#f2f2f2 ;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+               
+        
+            }
+            .b15{
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color:#f2f2f2 ;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+               
+        
+            }
+            .b16{
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color:#f2f2f2 ;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+               
+        
+            }
+            .b17{
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color:#f2f2f2 ;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+               
+        
+            }
+            .b18{
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color: #999999;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+               
+        
+            }
+            .b19{
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color: #999999;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+               
+        
+            }
+            .b20{
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color: #999999;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+               
+        
+            }
+            .b21{
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color:#f2f2f2 ;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+               
+        
+            }
+            .b22{
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color:#f2f2f2 ;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+               
+        
+            }
+            .b23{
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color:#f2f2f2 ;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+               
+        
+            }
+            .b24{
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color:#f2f2f2 ;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+               
+        
+            }
+            .b25{
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color: #999999;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+               
+        
+            }
+            .b26{
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color: #999999;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+               
+        
+            }
+            .b27{
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color: #999999;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+               
+        
+            }
+            .b28{
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color:#f2f2f2;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+               
+        
+            }
+            .b29{
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color:#f2f2f2;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+               
+        
+            }
+            .b30{
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color:#f2f2f2;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+               
+        
+            }
+            .b31{
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color:#f2f2f2;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+               
+        
+            }
+            .b32{
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color: #999999;
+                
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+               
+        
+            }
+            .b33{
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color: #999999;
+               
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+               
+        
+            }
+            .b34{
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color: #0073e6;
+               
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+               
+        
+            }
+            .b35{
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color:#f2f2f2;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+               
+        
+            }
+            input[type="text"] {
+            width: 50%; 
+            height: 12%;
+            border:black;
+            border: 2px;
+            font-size: 50px;
+
+        }
+        
+    button:hover {
+       box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+       background-image: linear-gradient(top, #f8f8f8, #f1f1f1);
+       opacity: 1;
+       border: 1px solid #c6c6c6;
+       color: #222;
+       cursor: pointer;
+       border-radius: 5px;}
+    .b34:hover {
+      background-color: #4d90fe;
+      background-image: linear-gradient(top, #4d90fe, #357ae8);
+      border: 1px solid #2f5bb7;
+      color: #fefefe;
+      border-radius: 5px;}
+
+
+
+          
+             
+        </style>
+
+    </head>
+   
+    <body>
+        <div class="main">
+        <center>
+        <div class="screen" >
+            <label><input id="input"type="text" 
+                 width="50%"; height="50%"; dir="ltr" ;/></label>
+
+        </div>
+        <div class="t">
+
+        
+
+        <table  width="50%"; height="50%";>
+          
+                <tr>
+                    <td id="c1" width="80" height="40"><button class="b1"id="b1">Inv</button></td>
+                    <td id="c2" width="80" height="40"><button class="b2" id="b2">Deg</button></td>
+                    <td id="c3" width="80" height="40"><button class="b3"id="b3"onclick="p('!')">x!</button></td>
+                    <td id="c4" width="80" height="40"><button class="b4"id="b4"onclick="p('&lpar;')">&lpar;</button></td>
+                    <td id="c5" width="80" height="40"><button class="b5"id="b5"onclick="p('&rpar;')">&rpar;</button></td>
+                    <td id="c6" width="80" height="40"><button class="b6"id="b6" onclick="p('C')">C</button></td>
+                    <td id="c7" width="80" height="40"><button class="b7"id="b7"><img src="Screenshot (56).png" width="100%" height="100%"></button></td>
+                </tr>
+                <tr>
+                    <td id="c8" width="80" height="40"><button class="b8"id="b8"onclick="p('ln')">ln</button></td>
+                    <td id="c9" width="80" height="40"><button class="b9"id="b9"onclick="p('sin')">sin</button></td>
+                    <td id="c10" width="80" height="40"><button class="b10"id="b10"onclick="p('%')">%</button></td>
+                    <td id="c11" width="80" height="40"><button class="b11"id="b11" onclick="p('7')">7</button></td>
+                    <td id="c12" width="80" height="40"><button class="b12"id="b12"onclick="p('8')">8</button></td>
+                    <td id="c13" width="80" height="40"><button class="b13"id="b13"onclick="p('9')">9</button></td>
+                    <td id="c14" width="80" height="40"><button class="b14"id="b14"onclick="p('/')"><img src="Screenshot2 (56).png" width="100%" height="100%"></button></td>
+                </tr>
+                <tr>
+                    <td id="c15" width="80" height="40"><button class="b15"id="b15"onclick="p('log')">log</button></td>
+                    <td id="c16" width="80" height="40"><button class="b16" id="b16"onclick="p('cos')">cos</button></td>
+                    <td id="c17" width="80" height="40"><button class="b17"id="b17"onclick="p('sqrt')"><img src="Screenshot (58).png" width="100%" height="100%"></button></td>
+                    <td id="c18" width="80" height="40"><button class="b18"id="b18"onclick="p('4')">4</button></td>
+                    <td id="c19"width="80" height="40"><button class="b19"id="b19"onclick="p('5')">5</button></td>
+                    <td id="c20"width="80" height="40"><button class="b20"id="b20"onclick="p('6')">6</button></td>
+                    <td id="c21"width="80" height="40"><button class="b21"id="b21"onclick="p('*')"><img src="Screenshot (59).png" width="100%" height="100%"></button></td>
+                </tr>
+                <tr>
+                    <td id="c22"width="80" height="40"><button class="b22"id="b22"onclick="p('^')">^</button></td>
+                    <td id="c23"width="80" height="40"><button class="b23"id="b23"onclick="p('tan')">tan</button></td>
+                    <td id="c24"width="80" height="40"><button class="b24"id="b24"onclick="p('1/x')">1/x</button></td>
+                    <td id="c25"width="80" height="40"><button class="b25"id="b25"onclick="p('1')">1</button></td>
+                    <td id="c26"width="80" height="40"><button class="b26"id="b26"onclick="p('2')">2</button></td>
+                    <td id="c27"width="80" height="40"><button class="b27"id="b27"onclick="p('3')">3</button></td>
+                    <td id="c28"width="80" height="40"><button class="b28"id="b28"onclick="p('-')"><img src="Screenshot (61).png" width="100%" height="100%"></button></td>
+                </tr>
+                <tr>
+                    <td id="c29"width="80" height="40"><button class="b29"id="b29"onclick="p('Exp')">Exp</button></td>
+                    <td id="c30"width="80" height="40"><button class="b30"id="b30"onclick="p('3.14')"><img src="Screenshot (60).png" width="100%" height="100%"></button></td>
+                    <td id="c31"width="80" height="40"><button class="b31"id="b31"onclick="p('e')">e</button></td>
+                    <td id="c32"width="80" height="40"><button class="b32"id="b32"onclick="p('0')">0</button></td>
+                    <td id="c33"width="80" height="40"><button class="b33"id="b33"onclick="p('.')">.</button></td>
+                    <td id="c34"width="80" height="40"><button class="b34"id="b34"onclick="result()">=</button></td>
+                    <td id="c35"width="80" height="40"><button class="b35"id="b35"onclick="p('+')">+</button></td>
+                </tr>
+                
+            
+        </table>
+    </center>
+</div>
+</div>
+<script> /*
+   let str = "";
+    let charArray = []
+    let charArray2 = []
+   
+    let num1=0
+    let num2=0
+    let result=0
+    function isTextFieldEmpty() {
+    const textField = document.getElementById('input'); 
+    return textField.value.trim() === ''; 
+}
+function pfact(){
+        const button = document.getElementById('b3');
+    const textInput = document.getElementById('input');
+    
+    button.addEventListener('click', function() {
+        if(isTextFieldEmpty() )
+        textInput.value =(this.innerText);
+    else{
+       str= textInput.value;
+       textInput.value+= ("x"+this.innerText);
+    }
+    });
+
+   
+         
+    }
+    function plp(){
+        const button = document.getElementById('b4');
+    const textInput = document.getElementById('input');
+    
+    button.addEventListener('click', function() {
+        if(isTextFieldEmpty() )
+        textInput.value =(this.innerText);
+    else{
+       str= textInput.value;
+       textInput.value+= (this.innerText);
+    }
+    });
+
+   
+         
+    }
+    function prp(){
+        const button = document.getElementById('b5');
+    const textInput = document.getElementById('input');
+    
+    button.addEventListener('click', function() {
+        if(isTextFieldEmpty() )
+        textInput.value =(this.innerText);
+    else{
+       str= textInput.value;
+       textInput.value+= (this.innerText);
+    }
+    });
+
+   
+         
+    }
+    function pln(){
+        const button = document.getElementById('b8');
+    const textInput = document.getElementById('input');
+    
+    button.addEventListener('click', function() {
+        if(isTextFieldEmpty() )
+        textInput.value =(this.innerText);
+    else{
+       str= textInput.value;
+       textInput.value+= ("x"+this.innerText);
+    }
+    });
+
+   
+         
+    }
+    function psin(){
+        const button = document.getElementById('b9');
+    const textInput = document.getElementById('input');
+    
+    button.addEventListener('click', function() {
+        if(isTextFieldEmpty() )
+        textInput.value =(this.innerText);
+    else{
+       str= textInput.value;
+       textInput.value+= ("x"+this.innerText);
+    }
+    });
+
+   
+         
+    }
+    function pper(){
+        const button = document.getElementById('b10');
+    const textInput = document.getElementById('input');
+    
+    button.addEventListener('click', function() {
+        if(isTextFieldEmpty() )
+        textInput.value =(this.innerText);
+    else{
+       str= textInput.value;
+       textInput.value+= (this.innerText);
+    }
+    });
+
+   
+         
+    }
+    function pdiv(){
+        const button = document.getElementById('b14');
+    const textInput = document.getElementById('input');
+    
+    button.addEventListener('click', function() {
+        if(isTextFieldEmpty() )
+        textInput.value =("//");
+    else{
+       str= textInput.value;
+       textInput.value+= ("/");
+    }
+    });
+
+   
+         
+    }
+    function plog(){
+        const button = document.getElementById('b15');
+    const textInput = document.getElementById('input');
+    
+    button.addEventListener('click', function() {
+        if(isTextFieldEmpty() )
+        textInput.value =(this.innerText);
+    else{
+       str= textInput.value;
+       textInput.value+= ("x"+this.innerText);
+    }
+    });
+
+   
+         
+    }
+    function pcos(){
+        const button = document.getElementById('b16');
+    const textInput = document.getElementById('input');
+    
+    button.addEventListener('click', function() {
+        if(isTextFieldEmpty() )
+        textInput.value =(this.innerText);
+    else{
+      
+        textInput.value+= ("x"+this.innerText);
+    }
+    });
+
+   
+         
+    }
+    function psq(){
+        const button = document.getElementById('b17');
+    const textInput = document.getElementById('input');
+    
+    button.addEventListener('click', function() {
+        if(isTextFieldEmpty() )
+        textInput.value ="sqrt()";
+    else{
+      
+       textInput.value+="x"+"sqrt()";
+    }
+    });
+
+   
+         
+    }
+    function pmlt(){
+        const button = document.getElementById('b21');
+    const textInput = document.getElementById('input');
+    
+    button.addEventListener('click', function() {
+        if(isTextFieldEmpty() )
+        textInput.value ='x';
+    else{
+      
+       textInput.value+= 'x';
+    }
+    });
+
+   
+         
+    }
+    function ppow(){
+        const button = document.getElementById('b22');
+    const textInput = document.getElementById('input');
+    
+    button.addEventListener('click', function() {
+        if(isTextFieldEmpty() )
+        textInput.value =(this.innerText);
+    else{
+      
+        textInput.value+= ("x"+this.innerText);
+    }
+    });
+
+   
+         
+    }
+    function ptan(){
+        const button = document.getElementById('b23');
+    const textInput = document.getElementById('input');
+    
+    button.addEventListener('click', function() {
+        if(isTextFieldEmpty() )
+        textInput.value =(this.innerText);
+    else{
+      
+        textInput.value+= ("x"+this.innerText);
+    }
+    });
+
+   
+         
+    }
+    function pin(){
+        const button = document.getElementById('b24');
+    const textInput = document.getElementById('input');
+    
+    button.addEventListener('click', function() {
+        if(isTextFieldEmpty() )
+        textInput.value =(this.innerText);
+    else{
+      
+        textInput.value+= ("x"+this.innerText);
+    }
+    });
+
+   
+         
+    }
+    function psub(){
+        const button = document.getElementById('b28');
+    const textInput = document.getElementById('input');
+    
+    button.addEventListener('click', function() {
+        if(isTextFieldEmpty() )
+        textInput.value =('-');
+    else{
+      
+       textInput.value+= '-';
+    }
+    });
+
+   
+         
+    }
+    function pexp(){
+        const button = document.getElementById('b29');
+    const textInput = document.getElementById('input');
+    
+    button.addEventListener('click', function() {
+        if(isTextFieldEmpty() )
+        textInput.value =(this.innerText);
+    else{
+      
+        textInput.value+= ("x"+this.innerText);
+    }
+    });
+
+   
+         
+    }
+    function ppi(){
+        const button = document.getElementById('b30');
+    const textInput = document.getElementById('input');
+    
+    button.addEventListener('click', function() {
+        if(isTextFieldEmpty() )
+        textInput.value =(Math.PI);
+    else{
+      
+       textInput.value+= "x"+(Math.PI);
+    }
+    });
+
+   
+         
+    }
+    function pe(){
+        const button = document.getElementById('b31');
+    const textInput = document.getElementById('input');
+    
+    button.addEventListener('click', function() {
+        if(isTextFieldEmpty() )
+        textInput.value =(this.innerText);
+    else{
+      
+        textInput.value+= ("x"+this.innerText);
+    }
+    });
+
+   
+         
+    }
+    function pdot(){
+        const button = document.getElementById('b33');
+    const textInput = document.getElementById('input');
+    
+    button.addEventListener('click', function() {
+        if(isTextFieldEmpty() )
+        textInput.value =(this.innerText);
+    else{
+      
+       textInput.value+= (this.innerText);
+    }
+    });
+
+   
+         
+    }
+    function passi(){
+        const button = document.getElementById('b34');
+    const textInput = document.getElementById('input');
+    
+    button.addEventListener('click', function() {
+        if(isTextFieldEmpty() )
+        textInput.value =(this.innerText);
+    else{
+      
+       textInput.value+= (this.innerText);
+    } assi();
+    });
+
+   
+         
+    }
+    function psum(){
+        const button = document.getElementById('b35');
+    const textInput = document.getElementById('input');
+    
+    button.addEventListener('click', function() {
+        if(isTextFieldEmpty() )
+        textInput.value =(this.innerText);
+    else{
+      
+       textInput.value+= (this.innerText);
+    }
+    });
+
+   
+         
+    }
+
+    function p7(){
+        const button = document.getElementById('b11');
+    const textInput = document.getElementById('input');
+    
+           
+    
+    button.addEventListener('click', function() {
+        if(isTextFieldEmpty() )
+        textInput.value =(this.innerText);
+    else{
+       str= textInput.value;
+       
+        textInput.value+= (this.innerText);
+    }
+    
+
+    });
+
+   
+         
+    }
+ 
+    function p8(){
+        const button = document.getElementById('b12');
+    const textInput = document.getElementById('input');
+    button.addEventListener('click', function() {
+        if(isTextFieldEmpty() )
+        textInput.value =(this.innerText);
+    else{
+       str= textInput.value;
+       //const charArray = str.split("")
+       textInput.value+= charArray[charArray.length-1]+(this.innerText);
+    }
+    
+    });
+
+   
+         
+    }
+    function p9(){
+        const button = document.getElementById('b13');
+    const textInput = document.getElementById('input');
+    
+    button.addEventListener('click', function() {
+        if(isTextFieldEmpty() )
+        textInput.value =(this.innerText);
+    else{
+       str= textInput.value;
+      // const charArray = str.split("")
+       textInput.value+=charArray[charArray.length-1]+(this.innerText);
+    }
+    });
+
+   
+         
+    }
+    function p4(){
+        const button = document.getElementById('b18');
+    const textInput = document.getElementById('input');
+    button.addEventListener('click', function() {
+        if(isTextFieldEmpty() )
+        textInput.value =(this.innerText);
+    else{
+       str= textInput.value;
+       textInput.value+= (this.innerText);
+    }
+    });
+
+   
+         
+    }
+    function p5(){
+        const button = document.getElementById('b19');
+    const textInput = document.getElementById('input');
+    
+    button.addEventListener('click', function() {
+        if(isTextFieldEmpty() )
+        textInput.value =(this.innerText);
+    else{
+       str= textInput.value;
+       textInput.value+= (this.innerText);
+    }
+    });
+
+   
+         
+    }
+    function p6(){
+        const button = document.getElementById('b20');
+    const textInput = document.getElementById('input');
+    
+    button.addEventListener('click', function() {
+        if(isTextFieldEmpty() )
+        textInput.value =(this.innerText);
+    else{
+       str= textInput.value;
+       textInput.value+= (this.innerText);
+    }
+    });
+
+   
+         
+    }
+    function p1(){
+        const button = document.getElementById('b25');
+    const textInput = document.getElementById('input');
+    
+    button.addEventListener('click', function() {
+        if(isTextFieldEmpty() )
+        textInput.value =(this.innerText);
+    else{
+       str= textInput.value;
+       textInput.value+= (this.innerText);
+    }
+    });
+
+   
+         
+    }
+    function p2(){
+        const button = document.getElementById('b26');
+    const textInput = document.getElementById('input');
+    
+    button.addEventListener('click', function() {
+        if(isTextFieldEmpty() )
+        textInput.value =(this.innerText);
+    else{
+       str= textInput.value;
+       textInput.value+= (this.innerText);
+    }
+    });
+
+   
+         
+    }
+    function p3(){
+        const button = document.getElementById('b27');
+    const textInput = document.getElementById('input');
+    
+    button.addEventListener('click', function() {
+        if(isTextFieldEmpty() )
+        textInput.value =(this.innerText);
+    else{
+       str= textInput.value;
+       textInput.value+= (this.innerText);
+    }
+    });
+
+   
+         
+    }
+    function p0(){
+        const button = document.getElementById('b32');
+    const textInput = document.getElementById('input');
+    
+    button.addEventListener('click', function() {
+        if(isTextFieldEmpty() )
+        textInput.value =(this.innerText);
+    else{
+       str= textInput.value;
+       textInput.value+= (this.innerText);
+    }
+    });
+
+   
+         
+    }
+      
+    function sum(){
+        const textInput = document.getElementById('input');
+        str= textInput.value;
+        charArray=str.split('')
+        let s=""
+        while(str.indexOf("+")>0){ let ls = "", rs = "";
+        for( let i=str.indexOf("+")-1;s>=0 &&s!="+"&&s!="x"&&s!="/"&&s!="-"&&s!="^"&&s!="^";i--){
+            let s=str.charAt(i)
+            ls+=s
+        }
+        for(let i=str.indexOf("+")+1;i<str.length &&r!="+"&&r!="x"&&r!="/"&&r!="^"&&r!="-"&&s!="^"&&s!="^";r++){
+            let r=str.charAt(i)
+            rs+=r
+        }
+        num1=Number(ls);
+        num2=Number(rs);
+        result=num1+num2
+        charArray[str.indexOf("+")]=result}
+        return result;
+       
+        }
+        function sub(){
+       
+    
+        const textInput = document.getElementById('input');
+        str= textInput.value;
+        charArray=str.split('')
+        let s=""
+        while(str.indexOf("-")>0){ let ls = "", rs = "";
+        for( let i=str.indexOf("-")-1;s>=0 &&s!="+"&&s!="x"&&s!="/"&&s!="-"&&s!="^"&&s!="^";i--){
+            let s=str.charAt(i)
+            ls+=s
+        }
+        for(let i=str.indexOf("-")+1;i<str.length &&r!="+"&&r!="x"&&r!="/"&&r!="^"&&r!="-"&&s!="^"&&s!="^";r++){
+            let r=str.charAt(i)
+            rs+=r
+        }
+        num1=Number(ls);
+        num2=Number(rs);
+        result=num1-num2
+        charArray[str.indexOf("-")]=result}
+        return result;
+       
+        }
+        function mlt(){
+        
+    
+        const textInput = document.getElementById('input');
+        str= textInput.value;
+        charArray=str.split('')
+        let s=""
+        while(str.indexOf("*")>0){ let ls = "", rs = "";
+        for( let i=str.indexOf("*")-1;s>=0 &&s!="+"&&s!="x"&&s!="/"&&s!="-"&&s!="^"&&s!="^";i--){
+            let s=str.charAt(i)
+            ls+=s
+        }
+        for(let i=str.indexOf("*")+1;i<str.length &&r!="+"&&r!="x"&&r!="/"&&r!="^"&&r!="-"&&s!="^"&&s!="^";r++){
+            let r=str.charAt(i)
+            rs+=r
+        }
+        num1=Number(ls);
+        num2=Number(rs);
+        result=num1*num2
+        charArray[str.indexOf("*")]=result}
+        return result;
+       
+        }
+        function divi(){
+        
+    
+        const textInput = document.getElementById('input');
+        str= textInput.value;
+        charArray=str.split('')
+        let s=""
+        while(str.indexOf("/")>0){ let ls = "", rs = "";
+        for( let i=str.indexOf("/")-1;s>=0 &&s!="+"&&s!="x"&&s!="/"&&s!="-"&&s!="^"&&s!="^";i--){
+            let s=str.charAt(i)
+            ls+=s
+        }
+        for(let i=str.indexOf("/")+1;i<str.length &&r!="+"&&r!="x"&&r!="/"&&r!="^"&&r!="-"&&s!="^"&&s!="^";r++){
+            let r=str.charAt(i)
+            rs+=r
+        }
+        num1=Number(ls);
+        num2=Number(rs);
+        result=num1/num2
+        charArray[str.indexOf("/")]=result}
+        return result;
+       
+        }
+        function pow(){
+        
+   
+        const textInput = document.getElementById('input');
+        str= textInput.value;
+        charArray=str.split('')
+        let s=""
+        while(str.indexOf("^")>0){ let ls = "", rs = "";
+        for( let i=(str.indexOf("^")-1);s>=0 &&s!="+"&&s!="x"&&s!="/"&&s!="-"&&s!="^"&&s!="^";i--){
+            let s=str.charAt(i)
+            ls+=s
+        }
+        for(let i=(str.indexOf("^")+1);i<str.length &&r!="+"&&r!="x"&&r!="/"&&r!="^"&&r!="-"&&s!="^"&&s!="^";r++){
+            let r=str.charAt(i)
+            rs+=r
+        }
+        num1=Number(ls);
+        num2=Number(rs);
+        result=Math.pow(num1,num2)
+        charArray[str.indexOf("^")]=result}
+        return result;
+       
+        }
+        function delete1(){
+    document.getElementById('input').value="";
+}
+      const myArray1=[];
+      const myArray2=[];
+        function assi(){
+            const textInput = document.getElementById('input');
+           str= textInput.value; 
+           charArray2=str.split('')
+           for(let i=0;i<charArray2.length;i++){
+               if(charArray2[i]=="("){ str=""
+                  for(let v=charArray2.indexOf("(");v<charArray2.indexOf(")");v++){
+                       str+=charArray2[v]
+                      myArray1=str.split("(")
+                       myArray2=str.split(")")
+                      assi();
+                      str=myArray1[0]+result+myArray2[1]
+
+
+
+                  }
+                
+                    
+                 
+                }
+               if(str.indexOf("^")!=-1){
+                    pow()
+                }
+                if(str.indexOf("/")!=-1){
+                    divi()
+               }
+                if(str.indexOf("x")!=-1){
+                    mlt()
+               }
+                if(str.indexOf("+")!=-1){
+                    sum()
+               }
+               if(str.indexOf("-")!=-1){
+                    sub()
+               }
+
+            }
+         
+    return result}
+
+
+    function myScreen() {
+    var result = assi(); // Assuming assi() returns the result
+    document.getElementById("input").value = "=" + result;
+}*/
+function p(h) {
+  document.getElementById('input').value += h;
+}
+
+function result() {
+    var op1 = document.getElementById('input');
+    var op2 = op1.value;
+    var input = eval(op2);
+    
+    op1.value = input;
+}
+       
+     
+</script>
+    </body>
+</html>
